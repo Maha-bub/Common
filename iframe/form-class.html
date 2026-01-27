@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        
+        input{
+            border-radius: 4px;
+            padding: 5px 10px ;
+        }
+        textarea{
+            border-radius: 4px;
+            padding: 5px 5px ;
+        }
+        select{
+             border-radius: 4px;
+            padding: 5px 5px ;
+        }
+        form{
+            font-size: 20px;
+             font-weight: 600;
+        }
+        #subject{ 
+            font-size: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="background-color: #f1cfcf; border-radius: 10px;">
+        <legend style="font-size: 25px; text-align: center; font-weight: 700;">Student Form</legend>
+        <form action="">
+        ID: <br>
+        <input placeholder="Enter your ID" type="number" name="" id=""> <br><br>
+        Email: <br>
+        <input placeholder="Enter your valid email" type="email" name="" id=""> <br><br>
+        Address: <br>
+        <textarea placeholder="Enter your address" name="" id=""></textarea> <br><br>
+        City: <br>
+        <select name="" id="">
+            <option value="">Dhaka</option>
+            <option value="">Dhanmondi</option>
+            <option value="">Nilphamari</option>
+        </select> <br><br>
+        <fieldset><legend>Gender:</legend> <br>
+        <input type="radio" name="a" id="">Male
+        <input type="radio" name="a" id="">Female
+        <input type="radio" name="a" id="">Others
+        </fieldset>
+       <br><br>
+       Subject: <br>
+       <input id="subject" type="checkbox" name="" id="">HTML
+       <input id="subject" type="checkbox" name="" id="">CSS
+       <input id="subject" type="checkbox" name="" id="">CSS
+       <input id="subject" type="checkbox" name="" id="">JAVASCRIPT
+       <input id="subject" type="checkbox" name="" id="">REACT.JS <br><br>
+
+        <input style=" border-radius:5px; border-color: rgb(54, 219, 48); color: rgb(0, 0, 0); background-color: #f7d307; padding: 10px 20px 10px 20px;" type="submit" name="" id="">
+        <input style=" border-radius: 5px; border-color: rgb(54, 219, 48); color: rgb(0, 0, 0); background-color: #f7d307; padding: 10px 20px 10px 20px;" type="reset" name="" id="">
+    </form></fieldset>
+    
+</body>
+</html>
