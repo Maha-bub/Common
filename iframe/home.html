@@ -3,23 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iframe</title>
+    <title>Image map</title>
 </head>
 <body>
-   <h2>Home Page </h2> 
-   <div >
-    <div style="width: 25%; height: 500px; float: left; background-color: #c97e7e;">
-        <a href="form-class.html" target="ifrm">
-        <button style="background-color: rgb(247, 232, 20); width: 50px; margin: 20px;">Form</button>
-    </a>
-        <a href="Homework.html" target="ifrm">
-            <button style="background-color: rgb(247, 232, 20); width: 50px;margin: 20px;">Table</button>
-        </a>
-        
-    </div>
-    <div style="width: 75%; height: 500px; float: left; background-color: #97d450;">
-        <iframe src="form-class.html" width="75%" height="500px"     frameborder="0" name="ifrm"></iframe>
-    </div>
-   </div>
+    <h1>Image mapping</h1>
+     <img src="images/images/workplace.jpg" alt="laptob" usemap="#image-map" >
+     <map name="image-map">
+    <area target="_blank"alt="" title="" href="Laptop.html" coords="33,42,272,347" shape="rect">
+    <area target="_blank" alt="" title="" href="Coffie.html" coords="340,302,48" shape="circle">
+    <area target="_blank" alt="" title="" href="Mobile.html" coords="289,169,333,247" shape="rect">
+    >
+</map>
 </body>
 </html>
