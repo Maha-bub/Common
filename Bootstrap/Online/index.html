@@ -30,7 +30,8 @@
                     <td>1295223</td>
                     <td>CEO</td>
                     <th>
-                        <button type="button" class="btn btn-warning">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
                             <i class="bi bi-trash-fill"></i>
                         </button>
                         <button type="button" class="btn btn-succes">
@@ -95,15 +96,48 @@
                     <td>123545</td>
                     <td>Developer</td>
                     <td>
-                        <button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Edit">
-                            <i class="bi bi-trash-fill"></i>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <i class="bi bi-archive-fill"></i>
                         </button>
-                        <button type="button" class="btn btn-succes" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Delete">
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-succes" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Delete">
                             <i class="bi bi-pencil-square"></i></button>
-                        <button type="button" class="btn btn-info " data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="view">
+                        <!-- <button type="button" class="btn btn-info " data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="view">
+                            
+
+                        </button> -->
+                         <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <i class="bi bi-eye-fill"></i>
                         </button>
-                       
+
 
 
                     </td>
@@ -111,9 +145,10 @@
             </tbody>
         </table>
     </div>
+
     <script href="stylesheet" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
     </script>
-    <script >
+    <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
