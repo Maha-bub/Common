@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        .carousel-img {
+            max-width: 100vmax;
+            max-height: 90vmin;
+        }
+
+        .table-Section {
+            width: 100%;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="nav-link active" href="#">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" style="height: 576px;" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/backpacker-standing-sunrise-viewpoint-ja-bo-village-mae-hong-son-province-thailand.jpg"
+                    class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/full-shot-plus-sized-woman-stretching.jpg" class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/man-standing-hill-against-background-beautiful-mountain-landscape.jpg"
+                    class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/man-with-rucksack-admires-gorgeous-mountain-landscape.jpg"
+                    class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/rear-view-back-young-asian-hiking-man-standing-riseup-hands-with-happy-peak-rocky-mountain-copy-space.jpg"
+                    class="d-block w-100 carousel-img" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image/traveller-sitting-rock-holding-camera-take-photo-doi-pha-mon-mountains-chiang-rai-thailand.jpg"
+                    class="d-block w-100 carousel-img" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container-fluid table-Section">
+        <table class="table">
+            <thead class="table-warning">
+                <tr>
+                    <th scope="col">SL.</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Designation</th>
+                    <th scope="col">Customization</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-Secoundary">
+                    <th scope="row">1</th>
+                    <td>Maruf</td>
+                    <td>1295223</td>
+                    <td>CEO</td>
+
+                    <th><button type="button" class="btn btn-warning " data-bs-toggle="tooltip" data-bs-placement="left" title="Edit">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="View">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </th>
+                </tr>
+                <tr class="table-success">
+                    <th scope="row">2</th>
+                    <td>Fahim</td>
+                    <td>1295224</td>
+                    <td>Manager</td>
+                    <th><button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Edit">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="View">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </th>
+                </tr>
+                <tr class="table-danger">
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>123569</td>
+                    <td>Developer</td>
+                    <th><button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Edit">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="View">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </th>
+                </tr>
+                <tr class="table-dark ">
+                    <th scope="row">3</th>
+                    <td>Turna</td>
+                    <td>114549</td>
+                    <td>CM</td>
+                    <th><button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Edit">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                        <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" title="View">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </th>
+                </tr>
+                <tr class="table-info">
+                    <th scope="row">3</th>
+                    <td>John</td>
+                    <td>123545</td>
+                    <td>Developer</td>
+                    <th><button type="button" class="btn btn-warning" data-bs-toggle="tooltip" data-bs-placement="left" title="Edit">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                        <button type="button" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="tooltip" data-bs-placement="right" title="View">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
